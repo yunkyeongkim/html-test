@@ -1,0 +1,69 @@
+@import url(./reset.css);
+
+:root{
+    --w-size:1473px
+}
+
+
+/* index.css */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header > nav {}
+header > nav > a{
+    padding: 50px 120px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+header > h1 {}
+header > h1 > a {}
+
+main {}
+.visual {
+    height: 350px;
+    background: url("../img/Rectangle\ 9.jpg") 0 0 / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visual > h2{
+    color: rgba(255, 255, 255, 0.80);
+    font-family:'Inter', sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.memu {
+    width: var(--w-size);
+    margin: 150px auto;
+    text-align:center;
+}
+.memu > h3 { font-size: 1.8rem;}
+.memu > h3::after {
+    content: "";
+    width: 100px;
+    border: 1px solid #000;
+    display: block; 
+    margin: 20px auto;
+}
+.memu > p {}
+.memu > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.memu > ul > li { width: 300px ;}
+.memu > ul > li > figure {}
+.memu > ul > li > figure img { width: 100%; transition: 0.5s; }
+.memu > ul > li > figure > figcaption { margin-top: 40px; }
+
+.memu > ul > li > figure p{ height:300px; overflow: hidden; }
+.memu > ul > li > figure img:hover {
+    width: 150%;
+    transition: 0.5s;
+}
+
